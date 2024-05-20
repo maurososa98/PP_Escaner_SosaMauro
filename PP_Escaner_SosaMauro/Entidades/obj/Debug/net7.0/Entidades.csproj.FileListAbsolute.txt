@@ -9,3 +9,4 @@ C:\Users\Mauro\Desktop\PROG 2\PARCIAL_1\PARCIAL_1\PP_Escaner_SosaMauro\Entidades
 C:\Users\Mauro\Desktop\PROG 2\PARCIAL_1\PARCIAL_1\PP_Escaner_SosaMauro\Entidades\obj\Debug\net7.0\refint\Entidades.dll
 C:\Users\Mauro\Desktop\PROG 2\PARCIAL_1\PARCIAL_1\PP_Escaner_SosaMauro\Entidades\obj\Debug\net7.0\Entidades.pdb
 C:\Users\Mauro\Desktop\PROG 2\PARCIAL_1\PARCIAL_1\PP_Escaner_SosaMauro\Entidades\obj\Debug\net7.0\ref\Entidades.dll
+C:\Users\Mauro\Desktop\PROG 2\PARCIAL_1\PARCIAL_1\PP_Escaner_SosaMauro\Entidades\obj\Debug\net7.0\Entidades.sourcelink.json

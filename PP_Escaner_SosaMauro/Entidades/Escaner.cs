@@ -28,18 +28,16 @@ namespace Entidades
 
         public Escaner(string marca, TipoDoc tipo)
         {
+            var mapeo = new Dictionary<TipoDoc, Departamento>
+            {
+                {TipoDoc.libro, Departamento.procesosTecnicos},
+                {TipoDoc.mapa, Departamento.mapoteca}
+            };
+
             this.marca = marca;
             this.tipo = tipo;
             this.listaDocumentos = new List<Documento>();
-            switch (tipo)
-            {
-                case TipoDoc.mapa:
-                    this.locacion = Departamento.mapoteca;
-                    break;
-                case TipoDoc.libro:
-                    this.locacion = Departamento.procesosTecnicos;
-                    break;
-            }
+            this.locacion = mapeo.TryGetValue(tipo, out Departamento departamento) ? departamento : Departamento.nulo;
         }
 
         #region Propiedades
@@ -87,12 +85,8 @@ namespace Entidades
             bool retorno = false;
             foreach (Documento documento in e.listaDocumentos)
             {
-                if (documento is Libro libro && d is Libro libroD && libro == libroD)
-                {
-                    retorno = true;
-                    break;
-                }
-                else if (documento is Mapa mapa && d is Mapa mapaD && mapa == mapaD)
+                if ((documento is Libro libro && d is Libro libroD && libro == libroD) ||
+                    (documento is Mapa mapa && d is Mapa mapaD && mapa == mapaD))
                 {
                     retorno = true;
                     break;

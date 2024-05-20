@@ -7,9 +7,9 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            int extension = 0;
-            int cantidad = 0;
-            string resumen = "";
+            int extension;
+            int cantidad;
+            string resumen;
 
             Console.WriteLine($"\n########################################## LIBROS ###############################################################\n");
 
@@ -127,6 +127,23 @@ namespace Test
 
             Console.WriteLine(escaner_mapas.CambiarEstadoDocumento(mapa_1));
             Console.WriteLine(escaner_mapas.CambiarEstadoDocumento(mapa_3));
+
+
+
+
+
+            Console.WriteLine($"\n#########################################################################################################\n");
+
+            Console.WriteLine(extension);
+            Console.WriteLine(cantidad);
+            Console.WriteLine(resumen);
+            Console.WriteLine($"{escaner_libros.Locacion}");
+            Console.WriteLine($"{escaner_mapas.Locacion}");
+
+
+
+
+
         }
     }
 }

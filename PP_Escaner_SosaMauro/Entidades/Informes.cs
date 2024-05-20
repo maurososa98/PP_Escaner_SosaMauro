@@ -19,40 +19,34 @@ namespace Entidades
             extension = 0;
             cantidad = 0;
             resumen = "";
+
             StringBuilder texto = new StringBuilder();
             texto.AppendLine($"\t Informe Documentos (tipo {e.Tipo}): Estado {estado}");
-            switch (e.Tipo)
-            {
-                case TipoDoc.mapa:
-                    foreach (Mapa mapa in e.ListaDocumentos)
-                    {
-                        if (mapa.Estado == estado)
-                        {
-                            extension += mapa.Superficie;
-                            cantidad += 1;
-                            resumen += mapa.ToString();
-                        }
-                    }
-                    texto.AppendLine(resumen);
-                    texto.AppendLine($"Extensión: {extension} cm2");
-                    texto.AppendLine($"Cantidad: {cantidad} mapas");
-                    break;
 
-                case TipoDoc.libro:
-                    foreach (Libro libro in e.ListaDocumentos)
+            foreach (Documento documento in e.ListaDocumentos)
+            { 
+                if (documento.Estado == estado)
+                {
+                    cantidad += 1;
+                    resumen += documento.ToString();
+                    if (documento is Mapa mapa)
                     {
-                        if (libro.Estado == estado)
-                        {
-                            extension += libro.NumPaginas;
-                            cantidad += 1;
-                            resumen += libro.ToString();
-                        }
+                        extension += mapa.Superficie;
                     }
-                    texto.AppendLine(resumen);
-                    texto.AppendLine($"Extensión: {extension} páginas");
-                    texto.AppendLine($"Cantidad: {cantidad} libros");
-                    break;
+                    else if (documento is Libro libro)
+                    {
+                        extension += libro.NumPaginas;
+                    }
+                }
             }
+            
+            string textoExtencion = e.Tipo == TipoDoc.mapa ? $"Extensión: {extension} cm2" : $"Extensión: {extension} páginas";
+            string textoCantidad = e.Tipo == TipoDoc.mapa ? $"Cantidad: {cantidad} mapas" : $"Cantidad: {cantidad} libros";
+
+            texto.AppendLine(resumen);
+            texto.AppendLine(textoExtencion);
+            texto.AppendLine(textoCantidad);
+
             Console.WriteLine(texto.ToString());
         }
         public static void MostrarEnEscaner(Escaner e, out int extension, out int cantidad, out string resumen)

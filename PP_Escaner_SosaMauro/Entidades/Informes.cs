@@ -24,7 +24,7 @@ namespace Entidades
             texto.AppendLine($"\t Informe Documentos (tipo {e.Tipo}): Estado {estado}");
 
             foreach (Documento documento in e.ListaDocumentos)
-            { 
+            {
                 if (documento.Estado == estado)
                 {
                     cantidad += 1;
@@ -39,7 +39,7 @@ namespace Entidades
                     }
                 }
             }
-            
+
             string textoExtencion = e.Tipo == TipoDoc.mapa ? $"Extensión: {extension} cm2" : $"Extensión: {extension} páginas";
             string textoCantidad = e.Tipo == TipoDoc.mapa ? $"Cantidad: {cantidad} mapas" : $"Cantidad: {cantidad} libros";
 

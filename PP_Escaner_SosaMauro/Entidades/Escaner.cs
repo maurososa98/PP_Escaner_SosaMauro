@@ -61,7 +61,11 @@ namespace Entidades
 
         public bool CambiarEstadoDocumento(Documento d)
         {
-            return d.AvanzarEstado();
+            if (this == d && d.AvanzarEstado())
+            {
+                return true;
+            }
+            return false;
         }
         public static bool operator !=(Escaner e, Documento d)
         {
@@ -73,7 +77,7 @@ namespace Entidades
             if ((e.tipo == TipoDoc.libro && (d is Libro) || (e.tipo == TipoDoc.mapa && (d is Mapa))) &&
                 !(e == d) &&
                 d.Estado == Paso.Inicio &&
-                e.CambiarEstadoDocumento(d))
+                d.AvanzarEstado())
             {
                 e.listaDocumentos.Add(d);
                 retorno = true;

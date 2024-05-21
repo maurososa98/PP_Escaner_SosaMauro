@@ -43,10 +43,10 @@ namespace Entidades
             string textoExtencion = e.Tipo == TipoDoc.mapa ? $"Extensión: {extension} cm2" : $"Extensión: {extension} páginas";
             string textoCantidad = e.Tipo == TipoDoc.mapa ? $"Cantidad: {cantidad} mapas" : $"Cantidad: {cantidad} libros";
 
-            texto.AppendLine(resumen);
             texto.AppendLine(textoExtencion);
             texto.AppendLine(textoCantidad);
-
+            texto.AppendLine(resumen);
+            
             Console.WriteLine(texto.ToString());
         }
         public static void MostrarEnEscaner(Escaner e, out int extension, out int cantidad, out string resumen)

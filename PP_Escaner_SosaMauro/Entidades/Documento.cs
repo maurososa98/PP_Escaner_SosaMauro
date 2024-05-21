@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public abstract class Documento
     {
         int anio;

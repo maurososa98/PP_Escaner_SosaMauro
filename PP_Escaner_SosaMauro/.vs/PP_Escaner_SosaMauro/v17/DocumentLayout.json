@@ -7,20 +7,23 @@
       "RelativeMoniker": "D:0:0:{C4112EF5-4601-4F89-BC2D-6A193324BE6E}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\informes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\informes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\mapa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\documento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\informes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\informes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mauro\\Downloads\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|solutionrelative:entidades\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E8CC51D-A139-41C8-ABFB-5EF9FBE4DBC6}|Entidades\\Entidades.csproj|c:\\users\\mauro\\desktop\\prog 2\\parcial_1\\parcial_1\\pp_escaner_sosamauro\\entidades\\escaner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,8 +37,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mauro\\Downloads\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Downloads\\Program.cs",
+              "ToolTip": "C:\\Users\\Mauro\\Downloads\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Downloads\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T17:16:34.777Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
@@ -48,27 +64,27 @@
               "RelativeDocumentMoniker": "Test\\Program.cs",
               "ToolTip": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Test\\Program.cs",
               "RelativeToolTip": "Test\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAgwAAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T22:48:04.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Informes.cs",
               "DocumentMoniker": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Entidades\\Informes.cs",
               "RelativeDocumentMoniker": "Entidades\\Informes.cs",
               "ToolTip": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Entidades\\Informes.cs",
               "RelativeToolTip": "Entidades\\Informes.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAQwF0AAABPAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAmwCcAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T22:43:30.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Escaner.cs",
               "DocumentMoniker": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Entidades\\Escaner.cs",
               "RelativeDocumentMoniker": "Entidades\\Escaner.cs",
@@ -76,12 +92,11 @@
               "RelativeToolTip": "Entidades\\Escaner.cs",
               "ViewState": "AQIAAD4AAAAAAAAAAAAIwEcAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T22:41:22.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T22:41:22.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Mapa.cs",
               "DocumentMoniker": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Entidades\\Mapa.cs",
               "RelativeDocumentMoniker": "Entidades\\Mapa.cs",
@@ -94,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Libro.cs",
               "DocumentMoniker": "C:\\Users\\Mauro\\Desktop\\PROG 2\\PARCIAL_1\\PARCIAL_1\\PP_Escaner_SosaMauro\\Entidades\\Libro.cs",
               "RelativeDocumentMoniker": "Entidades\\Libro.cs",
@@ -102,8 +117,7 @@
               "RelativeToolTip": "Entidades\\Libro.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwB0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T22:37:57.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T22:37:57.856Z"
             },
             {
               "$type": "Document",

@@ -36,8 +36,8 @@ namespace Entidades
             cantidad = 0;
             resumen = "";
 
-            StringBuilder texto = new StringBuilder();
-            texto.AppendLine($"\t Informe Documentos (tipo {e.Tipo}): Estado {estado}");
+            //StringBuilder texto = new StringBuilder();
+            //texto.AppendLine($"\t Informe Documentos (tipo {e.Tipo}): Estado {estado}");
 
             foreach (Documento documento in e.ListaDocumentos)
             {
@@ -56,14 +56,14 @@ namespace Entidades
                 }
             }
 
-            string textoExtencion = e.Tipo == TipoDoc.mapa ? $"Extensión: {extension} cm2" : $"Extensión: {extension} páginas";
-            string textoCantidad = e.Tipo == TipoDoc.mapa ? $"Cantidad: {cantidad} mapas" : $"Cantidad: {cantidad} libros";
+            //string textoExtencion = e.Tipo == TipoDoc.mapa ? $"Extensión: {extension} cm2" : $"Extensión: {extension} páginas";
+            //string textoCantidad = e.Tipo == TipoDoc.mapa ? $"Cantidad: {cantidad} mapas" : $"Cantidad: {cantidad} libros";
 
-            texto.AppendLine(textoExtencion);
-            texto.AppendLine(textoCantidad);
-            texto.AppendLine(resumen);
+            //texto.AppendLine(textoExtencion);
+            //texto.AppendLine(textoCantidad);
+            //texto.AppendLine(resumen);
             
-            Console.WriteLine(texto.ToString());
+            //Console.WriteLine(texto.ToString());
         }
 
         /// <summary>

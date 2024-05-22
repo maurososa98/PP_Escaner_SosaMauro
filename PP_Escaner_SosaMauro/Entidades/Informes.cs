@@ -10,10 +10,26 @@ namespace Entidades
 {
     public static class Informes
     {
+        /// <summary>
+        /// Mostrara extencion, cantidad y resumen de los documentos Distribuidos
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="extension">Variable tipo out en la que se guardara el total de la extensión de lo procesado según el escáner y el estado.</param>
+        /// <param name="cantidad">Variable tipo out en la que se guardara el número total de ítems únicos procesados según el escáner y el estado.</param>
+        /// <param name="resumen">Variable tipo out en la que se guardara los datos de cada uno de los ítems contenidos en una lista según el escáner y el estado.</param>
         public static void MostrarDistribuidos(Escaner e, out int extension, out int cantidad, out string resumen)
         {
             MostrarDistribuidosPorEstado(e, Paso.Distribuido, out extension, out cantidad, out resumen);
         }
+
+        /// <summary>
+        /// Mostrara extencion, cantidad y resumen de los documentos segun el estado pasado por parametro
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="estado">Estado de los documentos a analizar</param>
+        /// <param name="extension">Variable tipo out en la que se guardara el total de la extensión de lo procesado según el escáner y el estado.</param>
+        /// <param name="cantidad">Variable tipo out en la que se guardara el número total de ítems únicos procesados según el escáner y el estado.</param>
+        /// <param name="resumen">Variable tipo out en la que se guardara los datos de cada uno de los ítems contenidos en una lista según el escáner y el estado.</param>
         private static void MostrarDistribuidosPorEstado(Escaner e, Paso estado, out int extension, out int cantidad, out string resumen)
         {
             extension = 0;
@@ -49,14 +65,38 @@ namespace Entidades
             
             Console.WriteLine(texto.ToString());
         }
+
+        /// <summary>
+        /// Mostrara extencion, cantidad y resumen de los documentos EnEscaner
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="extension">Variable tipo out en la que se guardara el total de la extensión de lo procesado según el escáner y el estado.</param>
+        /// <param name="cantidad">Variable tipo out en la que se guardara el número total de ítems únicos procesados según el escáner y el estado.</param>
+        /// <param name="resumen">Variable tipo out en la que se guardara los datos de cada uno de los ítems contenidos en una lista según el escáner y el estado.</param>
         public static void MostrarEnEscaner(Escaner e, out int extension, out int cantidad, out string resumen)
         {
             MostrarDistribuidosPorEstado(e, Paso.EnEscaner, out extension, out cantidad, out resumen);
         }
+
+        /// <summary>
+        /// Mostrara extencion, cantidad y resumen de los documentos EnRevision
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="extension">Variable tipo out en la que se guardara el total de la extensión de lo procesado según el escáner y el estado.</param>
+        /// <param name="cantidad">Variable tipo out en la que se guardara el número total de ítems únicos procesados según el escáner y el estado.</param>
+        /// <param name="resumen">Variable tipo out en la que se guardara los datos de cada uno de los ítems contenidos en una lista según el escáner y el estado.</param>
         public static void MostrarEnRevision(Escaner e, out int extension, out int cantidad, out string resumen)
         {
             MostrarDistribuidosPorEstado(e, Paso.EnRevision, out extension, out cantidad, out resumen);
         }
+
+        /// <summary>
+        /// Mostrara extencion, cantidad y resumen de los documentos Terminados
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="extension">Variable tipo out en la que se guardara el total de la extensión de lo procesado según el escáner y el estado.</param>
+        /// <param name="cantidad">Variable tipo out en la que se guardara el número total de ítems únicos procesados según el escáner y el estado.</param>
+        /// <param name="resumen">Variable tipo out en la que se guardara los datos de cada uno de los ítems contenidos en una lista según el escáner y el estado.</param>
         public static void MostrarTerminados(Escaner e, out int extension, out int cantidad, out string resumen)
         {
             MostrarDistribuidosPorEstado(e, Paso.Terminado, out extension, out cantidad, out resumen);

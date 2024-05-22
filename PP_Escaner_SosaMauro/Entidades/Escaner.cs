@@ -15,8 +15,13 @@ namespace Entidades
         TipoDoc tipo;
 
         public enum Departamento { nulo, mapoteca, procesosTecnicos }
-        public enum TipoDoc {libro, mapa }
+        public enum TipoDoc { libro, mapa }
 
+        /// <summary>
+        /// Constructor de la clase <c>Escaner</c>.
+        /// </summary>
+        /// <param name="marca">Corresponde a la marca del escane.</param>
+        /// <param name="tipo">Corresponde al tipo del escane.</param>
         public Escaner(string marca, TipoDoc tipo)
         {
             var mapeo = new Dictionary<TipoDoc, Departamento>
@@ -32,12 +37,24 @@ namespace Entidades
         }
 
         #region Propiedades
+        /// <value> Propiedad ListaDocumentos corresponde a la lista de documentos contenidos en un escaner.</value>
         public List<Documento> ListaDocumentos { get => listaDocumentos; }
+
+        /// <value> Propiedad Locacion corresponde a la locacion de un escaner (nulo, mapoteca, procesosTecnicos).</value>
         public Departamento Locacion { get => locacion; }
+
+        /// <value> Propiedad Marca corresponde a la marca de un escaner.</value>
         public string Marca { get => marca; }
+
+        /// <value> Propiedad Tipo corresponde al tipo de documento que puede escanear un escaner (libro, mapa).</value>
         public TipoDoc Tipo { get => tipo; }
         #endregion
 
+        /// <summary>
+        /// Cambia el estado del documento pasado por parametro.
+        /// </summary>
+        /// <param name="d">Corresponde a un documento, que se requiere cambiar de estado</param>
+        /// <returns>True si se logra cambiar el estado del documento, False si no se logra</returns>
         public bool CambiarEstadoDocumento(Documento d)
         {
             if (this == d && d.AvanzarEstado())
@@ -46,10 +63,24 @@ namespace Entidades
             }
             return false;
         }
+
+        /// <summary>
+        /// Sobrecarga del operador <c>!=</c> que comprueba si no hay un documento igual en escaner.
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="d">Documento analizado</param>
+        /// <returns>True si no se logra encontrar el documento, False si se logra</returns>
         public static bool operator !=(Escaner e, Documento d)
         {
             return !(e == d);
         }
+
+        /// <summary>
+        /// Sobrecarga del operador <c>+</c> que añade un documento al escaner.
+        /// </summary>
+        /// <param name="e">Escaner al cual se le va agregar un documento</param>
+        /// <param name="d">Documento a ser agregado</param>
+        /// <returns>True si se logra añadir el documento, False si no se logra</returns>
         public static bool operator +(Escaner e, Documento d)
         {
             bool retorno = false;
@@ -63,6 +94,13 @@ namespace Entidades
             }
             return retorno;
         }
+
+        /// <summary>
+        /// Sobrecarga del operador <c>==</c> que comprueba si hay un documento igual en escaner.
+        /// </summary>
+        /// <param name="e">Escaner analizado</param>
+        /// <param name="d">Documento analizado</param>
+        /// <returns>True si se logra encontrar el documento, False si no se logra</returns>
         public static bool operator ==(Escaner e, Documento d)
         {
             bool retorno = false;

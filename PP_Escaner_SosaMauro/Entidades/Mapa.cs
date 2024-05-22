@@ -19,18 +19,9 @@ namespace Entidades
         }
 
         #region Propiedades
-        public int Alto
-        {
-            get => alto;
-        }
-        public int Ancho
-        {
-            get => ancho;
-        }
-        public int Superficie
-        {
-            get => this.alto * this.ancho;
-        }
+        public int Alto { get => alto; }
+        public int Ancho { get => ancho; }
+        public int Superficie { get => this.alto * this.ancho; }
         #endregion
 
         public static bool operator !=(Mapa m1, Mapa m2)

@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    /// <summary>
-    /// 
-    /// </summary>
+    
     public abstract class Documento
     {
         int anio;
@@ -37,30 +35,12 @@ namespace Entidades
         }
 
         #region Propiedades
-        public int Anio
-        {
-            get => anio;
-        }
-        public string Autor
-        {
-            get => autor;
-        }
-        public string Barcode
-        {
-            get => barcode;
-        }
-        public Paso Estado
-        {
-            get => estado;
-        }
-        protected string NumNormalizado
-        {
-            get => numNormalizado;
-        }
-        public string Titulo
-        {
-            get => titulo;
-        }
+        public int Anio { get => anio; }
+        public string Autor { get => autor; }
+        public string Barcode { get => barcode; }
+        public Paso Estado { get => estado; }
+        protected string NumNormalizado { get => numNormalizado; }
+        public string Titulo { get => titulo; }
         #endregion
 
         public bool AvanzarEstado()

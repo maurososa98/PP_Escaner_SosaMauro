@@ -14,17 +14,8 @@ namespace Entidades
         string marca;
         TipoDoc tipo;
 
-        public enum Departamento
-        {
-            nulo,
-            mapoteca,
-            procesosTecnicos,
-        }
-        public enum TipoDoc
-        {
-            libro,
-            mapa
-        }
+        public enum Departamento { nulo, mapoteca, procesosTecnicos }
+        public enum TipoDoc {libro, mapa }
 
         public Escaner(string marca, TipoDoc tipo)
         {
@@ -41,22 +32,10 @@ namespace Entidades
         }
 
         #region Propiedades
-        public List<Documento> ListaDocumentos
-        {
-            get => listaDocumentos;
-        }
-        public Departamento Locacion
-        {
-            get => locacion;
-        }
-        public string Marca
-        {
-            get => marca;
-        }
-        public TipoDoc Tipo
-        {
-            get => tipo;
-        }
+        public List<Documento> ListaDocumentos { get => listaDocumentos; }
+        public Departamento Locacion { get => locacion; }
+        public string Marca { get => marca; }
+        public TipoDoc Tipo { get => tipo; }
         #endregion
 
         public bool CambiarEstadoDocumento(Documento d)

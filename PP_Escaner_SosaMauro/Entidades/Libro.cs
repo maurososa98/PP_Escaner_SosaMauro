@@ -17,14 +17,8 @@ namespace Entidades
         }
 
         #region Propiedades
-        public string ISBN
-        {
-            get => this.NumNormalizado;
-        }
-        public int NumPaginas
-        {
-            get => numPaginas;
-        }
+        public string ISBN { get => this.NumNormalizado; }
+        public int NumPaginas { get => numPaginas; }
         #endregion
 
         public static bool operator !=(Libro l1, Libro l2)
